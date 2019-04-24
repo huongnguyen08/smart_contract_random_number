@@ -1,0 +1,81 @@
+{
+  "infuraurl" : "https://mainnet.infura.io/v3/4431864c5f59464c938dbf82824d4875",
+  "addr" : "0xE685b07dAF3B070Ae418B32EB18B14F30899B3f5",
+  "privkey" : "",
+  "gasLimit" : 70000,
+  "gasPrice" : 8e9, 
+  "timespan" : 1800,
+  "smaddr" : "0x91D90560d12a3fC8799552052dA4492E69688004",
+  "abi" :[
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getId",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "genNumber",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint24"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getNumber",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint24"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "number",
+          "type": "uint24"
+        },
+        {
+          "indexed": false,
+          "name": "id",
+          "type": "uint256"
+        }
+      ],
+      "name": "onNewNumber",
+      "type": "event"
+    }
+  ]
+}
